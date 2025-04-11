@@ -3,8 +3,8 @@ import java.security.*;
 
 public class FileHasher {
     public static void main(String[] args) {
-        String filename = "shattered2.pdf"; // replace with your file name
-        String algorithm = "SHA-256"; // replace with the desired algorithm
+        String filename = "shattered2.pdf";
+        String algorithm = "SHA-256";
         
         String hashValue = hashAFile(filename, algorithm);
         System.out.println(hashValue + "  " + filename + " (" + algorithm + ")");

@@ -1,16 +1,6 @@
 import java.util.LinkedList;
 import java.util.Scanner;
 
-/**
- * Boolean array visitedStates //index is state
- * for i: 0 to 51
- * 
- * findPath(currentState, destinationState, adjList, visitedStates) {
- * initialize path //empty LinkedList, for example
- * visitedStates[currentState] = true
- * for each state adjacent to current state that hasn't been visited}
- */
-
 public class WOMAN {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

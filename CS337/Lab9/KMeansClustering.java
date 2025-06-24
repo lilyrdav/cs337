@@ -26,7 +26,7 @@ public class KMeansClustering {
         }
         */
         
-        // Initialize CM to K randomly chosen elements from DATA
+        // Initialize CM to K randomly chosen elements from data
         Random rand = new Random();
         for (int i = 0; i < K; i++) {
             int index = rand.nextInt(M);
@@ -42,7 +42,6 @@ public class KMeansClustering {
                 break;
             }
     
-            // Let: groups be an array of size K of something that can hold 1xM arrays, initially empty
             float[][][] groups = new float[K][][];
     
             for (int i = 0; i < K; i++) {
@@ -95,11 +94,7 @@ public class KMeansClustering {
         return CM;
     }
     
-    // Clus_Distance(cOne, cTwo) // cOne and cTwo are KxM 2-D arrays
-    // Returns the sum of the distances between the corresponding elements of cOne and cTwo
-    // (i.e., the sum of the distances between the first elements of cOne and cTwo, the second elements of cOne and cTwo, etc.)
     public static float clusDistance(float[][] cOne, float[][] cTwo) {
-        // Clus_Distance(cOne, cTwo) // cOne and cTwo are KxM 2-D arrays
         float d = 0;
 
         for (int i = 0; i < cOne.length; i++) {
